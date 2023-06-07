@@ -37,7 +37,7 @@ const useBuscarAnime = (peticion, input, tiempo) => {
       try {
         const {data:datos} = await peticion(input);
         dispatch({ tipo: "ENCONTRADO", carga: datos });
-        cache.dispatch({ tipo: "CREAR_CACHE", carga: { key: input, valor: datos } });
+        cache.dispatch({ tipo: "CREAR_CACHE", carga: { key: input, value: datos } });
       } catch (error) {
         dispatch({ tipo: "ERROR", carga: error });
       }

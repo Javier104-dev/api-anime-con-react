@@ -8,7 +8,7 @@ const cacheReducer = (estado, accion) => {
 
   switch (tipo) {
     case "CREAR_CACHE":
-      return {...estado, [carga.key]: carga.valor};
+      return {...estado, [carga.key]: carga.value};
     
     default:
       return estado;
@@ -20,7 +20,7 @@ const CacheProvider = ({ children }) => {
       cacheReducer,
       JSON.parse(localStorage.getItem("CACHE_PAGINA")) || {}
     );
-
+    
   useEffect(() => {
     const estadoActual = JSON.stringify(estado);
     localStorage.setItem("CACHE_PAGINA", estadoActual)
