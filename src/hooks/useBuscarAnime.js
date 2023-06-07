@@ -1,4 +1,5 @@
-import { useEffect, useReducer } from "react"
+import { useContext, useEffect, useReducer } from "react"
+import { CacheContext } from "../createContext/CacheContext";
 
 const estadoInicial = {
   cargando: false,
@@ -22,15 +23,21 @@ const estadosReducer = (estado, action) => {
 }
 
 const useBuscarAnime = (peticion, input, tiempo) => {
+  const cache = useContext(CacheContext);
   const [estadoActual, dispatch] = useReducer(estadosReducer, estadoInicial);
 
   useEffect(() => {
+    if (cache.estado[input]) {
+      dispatch({ type: "ENCONTRADO", carga: cache.estado[input]});
+      return;
+    }
+
     const tiempoCarga = setTimeout( async () => {
       dispatch({ tipo: "CARGANDO" });
       try {
         const {data:datos} = await peticion(input);
         dispatch({ tipo: "ENCONTRADO", carga: datos });
-
+        cache.dispatch({ tipo: "CREAR_CACHE", carga: { key: input, valor: datos } });
       } catch (error) {
         dispatch({ tipo: "ERROR", carga: error });
       }
@@ -40,7 +47,7 @@ const useBuscarAnime = (peticion, input, tiempo) => {
       clearTimeout(tiempoCarga);
     };
 
-  }, [peticion, input, tiempo]);
+  }, [peticion, cache, input, tiempo]);
 
   return estadoActual;
 }
