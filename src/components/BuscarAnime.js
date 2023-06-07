@@ -3,6 +3,7 @@ import { buscarAnime } from "../api/api";
 import styled from '@emotion/styled'
 import Cargando from './Cargando';
 import useBuscarAnime from '../hooks/useBuscarAnime';
+import { NavLink } from 'react-router-dom';
 
 const ContenedorLista = styled.div`
   display: flex;
@@ -19,11 +20,13 @@ const BuscarAnime = () => {
       {cargando && <Cargando/>}
       {datos && (
         <ContenedorLista>
-        {datos.data.map((anime) => (
-          <div key={anime.mal_id}>
-            <div>{anime.title}</div>
-            <img src={anime.images.jpg.image_url}  />
-          </div>
+        {datos.map((anime) => (
+          <NavLink key={anime.mal_id} to={`/anime/${anime.mal_id}/ver`}>
+            <div>
+              <div>{anime.title}</div>
+              <img src={anime.images.jpg.image_url} alt={anime.title}/>
+            </div>
+          </NavLink>
         ))}
         </ContenedorLista>
       )}

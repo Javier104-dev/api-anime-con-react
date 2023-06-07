@@ -28,8 +28,9 @@ const useBuscarAnime = (peticion, input, tiempo) => {
     const tiempoCarga = setTimeout( async () => {
       dispatch({ tipo: "CARGANDO" });
       try {
-        const datos = await peticion(input);
+        const {data:datos} = await peticion(input);
         dispatch({ tipo: "ENCONTRADO", carga: datos });
+
       } catch (error) {
         dispatch({ tipo: "ERROR", carga: error });
       }
