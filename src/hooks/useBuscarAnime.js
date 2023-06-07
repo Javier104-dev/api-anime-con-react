@@ -28,7 +28,7 @@ const useBuscarAnime = (peticion, input, tiempo) => {
 
   useEffect(() => {
     if (cache.estado[input]) {
-      dispatch({ type: "ENCONTRADO", carga: cache.estado[input]});
+      dispatch({ tipo: "ENCONTRADO", carga: cache.estado[input]});
       return;
     }
 
