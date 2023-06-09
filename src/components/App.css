@@ -1,0 +1,19 @@
+.section {
+  background-image: radial-gradient(circle at 87.5% 12.5%, #394550 0, #364149 10%, #343b40 20%, #323638 30%, #302f2f 40%, #2e2826 50%, #2c211e 60%, #2a1a18 70%, #281413 80%, #260d0f 90%, #25050b 100%);
+  color: white;
+  padding-left: calc((100% - 1200px)/2);
+  padding-right: calc((100% - 1200px)/2);
+  min-height: 100vh;
+}
+
+.titulo {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+.titulo__link{
+  font-size: 5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}

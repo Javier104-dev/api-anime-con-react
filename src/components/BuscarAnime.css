@@ -1,0 +1,45 @@
+.animes__buscar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 2.5rem 0;
+}
+
+.animes__buscar__titulo {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.animes__lista {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.animes__lista__item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+  margin-bottom: 1.5rem;
+}
+
+.anime__item {
+  text-decoration: none;
+  color: white;
+}
+
+.anime__item:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.anime__item:not(:hover) {
+  transition: 0.2s;
+}
+
+.anime__item__titulo {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+

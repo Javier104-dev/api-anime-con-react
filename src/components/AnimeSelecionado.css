@@ -1,0 +1,28 @@
+.section__anime__seleccionado {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.anime__seleccionado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+}
+
+.anime__seleccionado__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.anime__seleccionado__imagen {
+  width: 300px;
+}
+
+.anime__seleccionado__sinopsis {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
