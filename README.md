@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+<h1 align='center'>Api anime con React</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Introducción
+Primer proyecto usando `React`, se utilizó para crear una página que consume una API de código abierto que contiene información de series, películas y todo lo relacionado con anime.
 
-## Available Scripts
+Se utilizan `useState` para controlar el input de búsqueda, `useReducer` para manejar el flujo de datos que utiliza la página y `useContext` para crear el caché junto al Local Storage, lo que reduce los tiempos de carga y las peticiones innecesarias a la API.
 
-In the project directory, you can run:
+### Rutas
+| Ruta                                | Explicación                                                            |
+| ----------------------------------- | ---------------------------------------------------------------------- |
+| http://localhost:3000               | Ruta home por defecto, muestra los resultados de búsqueda              |
+| http://localhost:3000/anime/:id/ver | Muestra de forma detallada las características de una serie o película |
 
-### `npm start`
+### Especificaciones
+- Servidor: http://localhost:3000
+- Api utilizada: https://api.jikan.moe/v4
+- Versión: 1.0.0
+- Autor: Javier Anibal Villca
+- Repositorio GitHub: git+https://github.com/Javier104-dev/api-anime-con-react.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tecnologías utilizadas
+- **Node.js v18.16.0:** Plataforma de ejecución de JavaScript del lado del servidor.
+- **ESLint:** Herramienta de linting para mantener un código JavaScript/Node.js consistente y legible.
+- **Create React App:** Herramienta que facilita el desarrollo de aplicaciones `React`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2 align='center'>Instrucciones de instalación</h2>
 
-### `npm test`
+### Requerimientos:
+- IDE - Visual Studio Code v1.84.2
+- Git v2.43.0
+- Node.js v20.9.0
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Preparando el ambiente:
+- Descargar o clonar el repositorio.
+- Abrir la consola y correr el comando `npm install` para descargar las dependencias requeridas.
+- Usar el comando `npm start` para iniciar el servidor, por defecto se abrirá `http://localhost:3000` en una ventana del navegador.
 
-### `npm run build`
+<h2 align='center'>Lo que encontrarás</h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Página principal
+<p align='left'>
+  <img
+    alt='Página principal'
+    src='https://github.com/Javier104-dev/api-anime-con-react/assets/105408069/e4cc2969-2296-4870-819c-d66cc5dad9e5'
+  >
+</p>
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Ver detalles
+<p align='left'>
+  <img
+    alt='Ver detalles'
+    src='https://github.com/Javier104-dev/api-anime-con-react/assets/105408069/d6d55141-65db-42a8-8d65-45dff304f435'
+  >
+</p>
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Autor:
+| [<img src='https://avatars.githubusercontent.com/u/105408069?v=4' width=115><br><sub>Javier Anibal Villca</sub>](https://github.com/Javier104-dev) |
+| :------------------------------------------------------------------------------------------------------------------------------------------------: |
