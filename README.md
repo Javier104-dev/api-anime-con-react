@@ -25,12 +25,12 @@ Se utilizan `useState` para controlar el input de búsqueda, `useReducer` para m
 
 <h2 align='center'>Instrucciones de instalación</h2>
 
-### Requerimientos:
+### Requerimientos
 - IDE - Visual Studio Code v1.84.2
 - Git v2.43.0
 - Node.js v20.9.0
 
-### Preparando el ambiente:
+### Preparando el ambiente
 - Descargar o clonar el repositorio.
 - Abrir la consola y correr el comando `npm install` para descargar las dependencias requeridas.
 - Usar el comando `npm start` para iniciar el servidor, por defecto se abrirá `http://localhost:3000` en una ventana del navegador.
