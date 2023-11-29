@@ -18,6 +18,9 @@ Se utilizan `useState` para controlar el input de búsqueda, `useReducer` para m
 - Autor: Javier Anibal Villca
 - Repositorio GitHub: git+https://github.com/Javier104-dev/api-anime-con-react.git
 
+### Probar página
+https://api-anime-con-react.vercel.app/
+
 ### Tecnologías utilizadas
 - **Node.js v18.16.0:** Plataforma de ejecución de JavaScript del lado del servidor.
 - **ESLint:** Herramienta de linting para mantener un código JavaScript/Node.js consistente y legible.
